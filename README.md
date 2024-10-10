@@ -1,9 +1,9 @@
-# GVT1.com and Googlevideo.com list
+# Тестовый парсер YouTube IP's
 
 Количество записей:
 **6783**
 
-Обновление списка раз в час.
+Обновление списка раз в 10 минут.
 
 IPV4 List => [Тут!](https://raw.githubusercontent.com/EikeiDev/youtube_ip_list/refs/heads/main/ipv4_list.txt)
 
