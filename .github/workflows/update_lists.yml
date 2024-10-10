@@ -9,7 +9,7 @@ on:
       - '.github/workflows/update_lists.yml'
   workflow_dispatch:
   schedule:
-    - cron: "*/20 * * * *"  # Запуск каждые 20 минут
+    - cron: "*/10 * * * *"  # Запуск каждые 20 минут
     
 jobs:
   update-lists:
