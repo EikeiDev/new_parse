@@ -6,10 +6,10 @@ on:
       - '*.py'
       - 'requirements.txt'
       - 'dns_resolvers.yml'
-      - '.github/workflows/update_lists.yml'
+      #- '.github/workflows/update_lists.yml'
   workflow_dispatch:
-  schedule:
-    - cron: "*/10 * * * *"  # Запуск каждые 20 минут
+  #schedule:
+    #- cron: "*/10 * * * *"  # Запуск каждые 20 минут
     
 jobs:
   update-lists:
