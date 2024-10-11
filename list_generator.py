@@ -7,8 +7,8 @@ from urllib.request import urlretrieve as download
 from dns import asyncresolver
 
 # Ограничение количества одновременных запросов
-SEMAPHORE_LIMIT = 200
-DELAY_RANGE = (1, 2)  # задержка между запросами от 1 до 3 секунд
+SEMAPHORE_LIMIT = 100
+DELAY_RANGE = (1, 3)  # задержка между запросами от 1 до 3 секунд
 
 semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
 
@@ -28,8 +28,8 @@ def get_ip_fetcher():
         ares.nameservers = load(resolvers_file, Loader=Loader)
 
     # specify timeout and lifetime
-    ares.timeout = 10
-    ares.lifetime = 10
+    ares.timeout = 15
+    ares.lifetime = 15
 
     # shuffle resolvers in hopes of finding more ips
     shuffle(ares.nameservers)
